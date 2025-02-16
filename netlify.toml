@@ -1,7 +1,10 @@
 [build]
-command = "npm run build"
+command = "npm install && npm run build"
 publish = "build/client"
-environment = { NODE_VERSION = "20" }
+
+[build.environment]
+NODE_VERSION = "20"
+NPM_FLAGS = "--no-optional"
 
 [dev]
 command = "npm run dev"
