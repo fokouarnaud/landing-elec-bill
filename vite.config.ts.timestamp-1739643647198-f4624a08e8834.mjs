@@ -1,0 +1,22 @@
+// vite.config.ts
+import { defineConfig } from "file:///D:/box/srcatch/electric_meter_bill/web_electric_bill_website/node_modules/vite/dist/node/index.js";
+import { vitePlugin as remix } from "file:///D:/box/srcatch/electric_meter_bill/web_electric_bill_website/node_modules/@remix-run/dev/dist/index.js";
+import tsconfigPaths from "file:///D:/box/srcatch/electric_meter_bill/web_electric_bill_website/node_modules/vite-tsconfig-paths/dist/index.mjs";
+import { resolve } from "path";
+var __vite_injected_original_dirname = "D:\\box\\srcatch\\electric_meter_bill\\web_electric_bill_website";
+var vite_config_default = defineConfig({
+  plugins: [remix(), tsconfigPaths()],
+  resolve: {
+    alias: {
+      "~": resolve(__vite_injected_original_dirname, "./app")
+    }
+  },
+  server: {
+    port: 3e3,
+    host: "localhost"
+  }
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJEOlxcXFxib3hcXFxcc3JjYXRjaFxcXFxlbGVjdHJpY19tZXRlcl9iaWxsXFxcXHdlYl9lbGVjdHJpY19iaWxsX3dlYnNpdGVcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfZmlsZW5hbWUgPSBcIkQ6XFxcXGJveFxcXFxzcmNhdGNoXFxcXGVsZWN0cmljX21ldGVyX2JpbGxcXFxcd2ViX2VsZWN0cmljX2JpbGxfd2Vic2l0ZVxcXFx2aXRlLmNvbmZpZy50c1wiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9pbXBvcnRfbWV0YV91cmwgPSBcImZpbGU6Ly8vRDovYm94L3NyY2F0Y2gvZWxlY3RyaWNfbWV0ZXJfYmlsbC93ZWJfZWxlY3RyaWNfYmlsbF93ZWJzaXRlL3ZpdGUuY29uZmlnLnRzXCI7aW1wb3J0IHsgZGVmaW5lQ29uZmlnIH0gZnJvbSBcInZpdGVcIjtcbmltcG9ydCB7IHZpdGVQbHVnaW4gYXMgcmVtaXggfSBmcm9tIFwiQHJlbWl4LXJ1bi9kZXZcIjtcbmltcG9ydCB0c2NvbmZpZ1BhdGhzIGZyb20gXCJ2aXRlLXRzY29uZmlnLXBhdGhzXCI7XG5pbXBvcnQgeyByZXNvbHZlIH0gZnJvbSBcInBhdGhcIjtcblxuZXhwb3J0IGRlZmF1bHQgZGVmaW5lQ29uZmlnKHtcbiAgcGx1Z2luczogW3JlbWl4KCksIHRzY29uZmlnUGF0aHMoKV0sXG4gIHJlc29sdmU6IHtcbiAgICBhbGlhczoge1xuICAgICAgXCJ+XCI6IHJlc29sdmUoX19kaXJuYW1lLCBcIi4vYXBwXCIpLFxuICAgIH0sXG4gIH0sXG4gIHNlcnZlcjoge1xuICAgIHBvcnQ6IDMwMDAsXG4gICAgaG9zdDogXCJsb2NhbGhvc3RcIixcbiAgfSxcbn0pO1xuIl0sCiAgIm1hcHBpbmdzIjogIjtBQUFnWCxTQUFTLG9CQUFvQjtBQUM3WSxTQUFTLGNBQWMsYUFBYTtBQUNwQyxPQUFPLG1CQUFtQjtBQUMxQixTQUFTLGVBQWU7QUFIeEIsSUFBTSxtQ0FBbUM7QUFLekMsSUFBTyxzQkFBUSxhQUFhO0FBQUEsRUFDMUIsU0FBUyxDQUFDLE1BQU0sR0FBRyxjQUFjLENBQUM7QUFBQSxFQUNsQyxTQUFTO0FBQUEsSUFDUCxPQUFPO0FBQUEsTUFDTCxLQUFLLFFBQVEsa0NBQVcsT0FBTztBQUFBLElBQ2pDO0FBQUEsRUFDRjtBQUFBLEVBQ0EsUUFBUTtBQUFBLElBQ04sTUFBTTtBQUFBLElBQ04sTUFBTTtBQUFBLEVBQ1I7QUFDRixDQUFDOyIsCiAgIm5hbWVzIjogW10KfQo=
