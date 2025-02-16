@@ -4,7 +4,8 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "prisma generate && npx remix vite:build",
+    "build": "npm run clean && prisma generate && remix vite:build",
+    "clean": "rimraf build public/build",
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "netlify serve",
@@ -12,7 +13,7 @@
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:studio": "prisma studio",
-    "postinstall": "prisma generate --no-engine",
+    "postinstall": "prisma generate",
     "db:seed": "prisma db seed"
   },
   "prisma": {
@@ -61,6 +62,7 @@
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "prisma": "^5.10.0",
+    "rimraf": "^5.0.5",
     "tailwindcss": "^3.4.1",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3",
