@@ -4,20 +4,22 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "prisma generate && remix vite:build",
+    "build": "prisma generate && npx remix vite:build",
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "remix-serve ./build/server/index.js",
+    "start": "netlify serve",
     "typecheck": "tsc",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:studio": "prisma studio",
+    "postinstall": "prisma generate --no-engine",
     "db:seed": "prisma db seed"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
+    "@netlify/remix-adapter": "^2.6.0",
     "@prisma/client": "^5.10.0",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-label": "^2.0.2",
